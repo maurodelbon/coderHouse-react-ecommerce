@@ -4,6 +4,7 @@ import Nav from 'react-bootstrap/Nav';
 import Form from 'react-bootstrap/Form';
 import FormControl from 'react-bootstrap/FormControl';
 import Button from 'react-bootstrap/Button';
+import CartWidget from '../cartwidget/CartWidget';
 
 export default function NavBar() {
     return (
@@ -14,6 +15,7 @@ export default function NavBar() {
           <Nav.Link href="#home">Almentacion</Nav.Link>
           <Nav.Link href="#features">Yoga</Nav.Link>
           <Nav.Link href="#pricing">Productos</Nav.Link>
+          <CartWidget />
         </Nav>
         <Form inline>
           <FormControl type="text" placeholder="Search" className="mr-sm-2" />
