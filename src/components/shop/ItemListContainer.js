@@ -1,9 +1,14 @@
 import React from 'react'
+import ItemCount from '../counter/ItemCount'
 
-export default function ItemListContainer({greeting}) {
+const handleCount=(cant)=>{
+    alert(`Tienes ${cant} productos nuevos en tu carrito`)
+}
+
+export default function ItemListContainer() {
     return (
         <div>
-            <h1 className='greeting'>{greeting}</h1>
+            <ItemCount stock={5} initial={1} onAdd={handleCount} />
         </div>
     )
 }
